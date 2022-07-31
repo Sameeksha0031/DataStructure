@@ -12,10 +12,9 @@ public class LinkList<T> {
 			tail = newnode;
 			temp = newnode;
 		}else {
-			temp.setNext(newnode);
-			tail = newnode;
-			tail.setNext(null);
 			temp = newnode;
+			temp.setNext(head);
+			head = newnode;
 		}
 	}
 	
