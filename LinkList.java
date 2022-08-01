@@ -83,7 +83,22 @@ public class LinkList<T> {
 		}
 		pointer.setNext(null);
 	    pointer = tail;
-		
+	 }
+	
+	public void removeTheGivenElement(MyNode<T> givenElement) {
+		pointer = head;
+		int flag = 0;
+		while(pointer != null) {
+			temp = pointer;
+			pointer = pointer.getNext();
+			if(pointer.getKey() == givenElement.getKey()) {
+				 temp.setNext(pointer.getNext());
+	    		}
+			flag++;
+		 }
+		if(flag == 0) {
+			System.out.println("Node does not exist");
+		}
 	}
 
 }
