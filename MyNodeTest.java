@@ -37,32 +37,6 @@ public class MyNodeTest {
         }
          if(choice == 3) {break;}
         }
-    	
-    	/*System.out.println("Enter the value you want to add");
-        Integer number = sc.nextInt();
-        MyNode<Integer> newnode = new MyNode<>(number);
-        list.append(newnode);
-    	
-        //LinkList<Integer> list = new LinkList<>();
-    	//list.append(myFirstNode);
-        //list.append(myThirdNode);
-        
-        
-        LinkListIterator<Integer> ti = new LinkListIterator<>();
-        ti.iterator(list);
-        
-        System.out.println();
-        System.out.println("Enter the value you want to add");
-        Integer addnumber = sc.nextInt();
-        MyNode<Integer> node = new MyNode<>(addnumber);
-        System.out.println("Enter the number after which new number to be inserted");
-        Integer previousnumber = sc.nextInt();
-        MyNode<Integer> oldnode = new MyNode<>(previousnumber);
-        list.insert(node , oldnode);
-        
-        LinkListIterator<Integer> ti1 = new LinkListIterator<>();
-        ti1.iterator(list);*/
-        
-	}
+    }
 
 }
