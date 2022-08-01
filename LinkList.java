@@ -53,5 +53,11 @@ public class LinkList<T> {
 		}
 	}
 	
+	public void removeFirstelement() {
+		pointer = head;
+		System.out.println(pointer + "is deleted");
+		//pointer.setNext(head);
+		head = pointer.getNext(); 
+	}
 
 }

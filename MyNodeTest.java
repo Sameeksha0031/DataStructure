@@ -10,7 +10,7 @@ public class MyNodeTest {
     	LinkList<Integer> list = new LinkList<>();
         while(true) {
         	System.out.println();
-        	System.out.println("Enter 0. To add\nEnter 1. To Display\nEnter 2. To Insert\nEnter 3. To Exist");
+        	System.out.println("Enter 0. To add\nEnter 1. To Display\nEnter 2. To Insert\nEnter 3. To Remove\nEnter 4. To Exist");
         	System.out.println("Enter your choice");
             int choice = sc.nextInt();
         switch(choice) {
@@ -33,35 +33,13 @@ public class MyNodeTest {
                     Integer previousnumber = sc.nextInt();
                     MyNode<Integer> oldnode = new MyNode<>(previousnumber);
                     list.insert(node , oldnode);
+                    break;
+                    
+            case 3:list.removeFirstelement();
         
         }
-         if(choice == 3) {break;}
+         if(choice == 4) {break;}
         }
-    	
-    	/*System.out.println("Enter the value you want to add");
-        Integer number = sc.nextInt();
-        MyNode<Integer> newnode = new MyNode<>(number);
-        list.append(newnode);
-    	
-        //LinkList<Integer> list = new LinkList<>();
-    	//list.append(myFirstNode);
-        //list.append(myThirdNode);
-        
-        
-        LinkListIterator<Integer> ti = new LinkListIterator<>();
-        ti.iterator(list);
-        
-        System.out.println();
-        System.out.println("Enter the value you want to add");
-        Integer addnumber = sc.nextInt();
-        MyNode<Integer> node = new MyNode<>(addnumber);
-        System.out.println("Enter the number after which new number to be inserted");
-        Integer previousnumber = sc.nextInt();
-        MyNode<Integer> oldnode = new MyNode<>(previousnumber);
-        list.insert(node , oldnode);
-        
-        LinkListIterator<Integer> ti1 = new LinkListIterator<>();
-        ti1.iterator(list);*/
         
 	}
 
