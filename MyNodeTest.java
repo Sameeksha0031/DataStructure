@@ -11,7 +11,7 @@ public class MyNodeTest {
         while(true) {
         	System.out.println();
         	System.out.println("Enter 0. To add\nEnter 1. To Display\nEnter 2. To Insert\nEnter 3. To Remove First Element\nEnter 4. To Remove Last Element "
-        			+ "\nEnter 5. To Exist");
+        			+ "\nEnter 5. To Search\nEnter 6.To Exist");
         	System.out.println("Enter your choice");
             int choice = sc.nextInt();
         switch(choice) {
@@ -39,10 +39,17 @@ public class MyNodeTest {
             case 3 :list.removeFirstelement();
                     break;
                     
-            case 4 :list.removeLastelement();        
+            case 4 :list.removeLastelement(); 
+                    break;
+                    
+            case 5 :System.out.println("Enter the node to search");
+                    Integer searchnumber = sc.nextInt();
+                    MyNode<Integer> searchnode = new MyNode<>(searchnumber);
+            	    list.search(searchnode);
+            
         
         }
-         if(choice == 5) {break;}
+         if(choice == 6) {break;}
         }
         
 	}

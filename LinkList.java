@@ -53,6 +53,21 @@ public class LinkList<T> {
 		}
 	}
 	
+	public void search(MyNode<T> searchnode) {
+		pointer = head;
+		int flag = 0;
+		while(pointer != null) {
+			if(pointer.getKey() == searchnode.getKey()) {
+				  System.out.println(searchnode.toString() +" is find at "+flag+ " position");
+				}
+			  flag++;
+			  pointer = pointer.getNext();
+			}
+		if(flag == 0) {
+			System.out.println("Node does not exist");
+		}
+	}
+	
 	public void removeFirstelement() {
 		pointer = head;
 		//System.out.println(pointer + "is deleted");
