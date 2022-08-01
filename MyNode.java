@@ -3,7 +3,7 @@ package com.javashowcase;
 public class MyNode<T> {
 
 	private T key; 
-	private MyNode<T> next ;
+	MyNode<T> next ;
 	
 	public MyNode(T key) {
 		this.key = key;

@@ -55,9 +55,20 @@ public class LinkList<T> {
 	
 	public void removeFirstelement() {
 		pointer = head;
-		System.out.println(pointer + "is deleted");
+		//System.out.println(pointer + "is deleted");
 		//pointer.setNext(head);
 		head = pointer.getNext(); 
+	}
+	
+	public void removeLastelement() {
+		pointer = head;
+		while(pointer.getNext() != tail) {
+		  //System.out.println(pointer + "is deleted");
+		  pointer = pointer.getNext();
+		}
+		pointer.setNext(null);
+	    pointer = tail;
+		
 	}
 
 }

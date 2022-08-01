@@ -10,7 +10,8 @@ public class MyNodeTest {
     	LinkList<Integer> list = new LinkList<>();
         while(true) {
         	System.out.println();
-        	System.out.println("Enter 0. To add\nEnter 1. To Display\nEnter 2. To Insert\nEnter 3. To Remove\nEnter 4. To Exist");
+        	System.out.println("Enter 0. To add\nEnter 1. To Display\nEnter 2. To Insert\nEnter 3. To Remove First Element\nEnter 4. To Remove Last Element "
+        			+ "\nEnter 5. To Exist");
         	System.out.println("Enter your choice");
             int choice = sc.nextInt();
         switch(choice) {
@@ -35,12 +36,16 @@ public class MyNodeTest {
                     list.insert(node , oldnode);
                     break;
                     
-            case 3:list.removeFirstelement();
+            case 3 :list.removeFirstelement();
+                    break;
+                    
+            case 4 :list.removeLastelement();        
         
         }
-         if(choice == 4) {break;}
+         if(choice == 5) {break;}
         }
         
 	}
 
-}
+ }
+
